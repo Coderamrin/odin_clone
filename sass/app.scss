@@ -1,0 +1,288 @@
+// variables
+$g-color: #ce973e; 
+$p-color: rgba(74,74,74,0.7);
+$g-bg: rgb(243 243 243);
+ 
+//global 
+.title {
+	text-transform: capitalize; 
+}
+
+.description {
+	color: $p-color;
+	font-size: 1.3rem; 
+	padding-bottom: 2rem;
+}
+
+.btn {
+	font-weight: bold;
+	color: #fff;
+	background: black;
+	padding: 20px 42px;
+	border-radius: .5rem;
+	text-transform: capitalize;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+// header 
+.header {
+	padding-top: 1rem; 
+	font-family: sans-serif;
+}
+
+.logo img {
+	width: 15%;
+}
+
+.logo-text {
+	color: $g-color;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 1rem;
+} 
+
+.nav-link {
+	padding: 8px;
+	font-size: 1rem;
+	text-decoration: none;
+	color: $p-color;
+	text-transform: capitalize;
+	font-weight: bold; 
+}
+
+.nav-link:hover {
+	color: #000;
+}
+
+// hero 
+.hero {
+	padding: 5rem 2rem;	
+	text-align: center;
+}
+
+.hero-title {
+	font-size: 2.6rem;
+	padding-bottom: 2rem;
+	color: $g-color;
+}
+
+.hero-sub-description a {
+	display: inline-block;
+	color: $g-color; 
+	font-size: 1.2rem;
+	padding-bottom: 4rem;  
+}
+
+.hero-btn {
+	background: #6abfc3;
+}
+
+// how it works 
+.how-it-work {
+	padding-bottom: 4rem;
+}
+
+.how-it-work-info {
+	text-align: center;
+	padding: 5rem 0;
+}
+
+.how-it-work--title {
+	font-size: 1.6rem;
+	font-weight: bold;
+	padding-bottom: 3rem; 
+}
+
+.how-it-work-descripton {
+	line-height: 2rem;
+}
+
+.tile {
+	text-align: center;
+	padding-bottom: 5rem;
+	padding: 0 1rem; 
+}
+
+.tile-img {
+	height: 100%;
+	padding-bottom: 2rem;
+}
+
+.tile-title {
+	font-size: 1.5rem;
+	padding: 1.5rem 0;
+}
+
+.tile-description {
+	line-height: 2rem;
+}
+
+// become a webdev
+.become-a-webdev {
+	background: $g-bg;
+	padding-bottom: 5rem;
+}
+
+.become-a-webdev-title {
+	color: $p-color;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.7rem;
+	padding: 4rem 0;
+}
+
+.become-a-webdev-cards {
+	flex-wrap: wrap;
+	padding-bottom: 2rem;
+}
+
+.card {
+	background: #fff;
+	width: 280px;
+	text-align: center;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
+
+.card-img {
+	padding: 2rem;
+	width: 250px; 
+	display: inline-block;
+}
+
+.card-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: 2rem;
+	color: $p-color; 
+}
+
+.get-started {
+	text-align: center;
+}
+
+.get-started-btn {
+	background-color: $g-color;
+}
+
+.get-started-btn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+// succsess-stories
+
+.succsess-stories-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: $p-color;
+	text-align: center;
+	padding: 4rem 0;
+}
+
+.succsess-details {
+	margin-left: 1rem;
+}
+
+.avater {
+	width: 60px; 
+	height: 60px;
+	border-radius: 50%;
+}
+
+.name {
+	font-size: 1.5rem;
+	padding-bottom: 1rem;
+	color: $g-color;
+}
+
+.succsess-story-description {
+	line-height: 2rem;
+}
+
+.read-more {
+	text-align: center;
+}
+
+.read-more a {
+	color: $p-color;
+	font-size: 1.1rem; 
+}
+
+.bottom-cta-title {
+	font-size: 2.5rem; 
+	padding: 4rem 0;
+	color: $p-color;
+}
+
+.bottom-cta-button {
+	text-decoration: none; 
+	background: #6abfc3;
+}
+
+.footer {
+	padding: 5rem 0;
+	background: #fff;
+}
+
+.nav-link {
+	display: inline-block; 
+	margin-bottom: .1rem; 
+}
+
+.hide-nav {
+	font-size: 30px;
+	color: #6abfc3; 
+	display: none;
+}
+
+@media screen and (max-width: 1100px) {
+	.container-lg {
+		width: 85%;
+	}
+
+	.logo img {
+		width: 12%;
+	}
+
+	.logo-text {
+		color: $g-color;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-left: .5rem;
+		font-size: 1.2rem;
+	} 
+} 
+
+@media screen and (max-width: 920px) {
+	.nav-link {
+		font-size: .9rem;
+	}
+
+	.logo-text {
+		font-size: 1rem;
+	}
+} 
+
+@media screen and (max-width: 752px) {
+	.header {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.hide-nav {
+		display: block;
+		text-align: center; 
+		align-self: center;  
+	} 
+
+	.how-it-work-tiles {
+		flex-direction: column; 
+	}  
+}
